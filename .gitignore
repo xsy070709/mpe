@@ -1,0 +1,6 @@
+/site/
+/output/
+/tmp/
+/docs/downloads/
+/.venv/
+__pycache__/

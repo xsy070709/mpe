@@ -226,7 +226,7 @@ def main():
             result.check_returncode()
     log = (temp / 'notes.log').read_text(encoding='utf-8', errors='replace')
     if 'Missing character:' in log:
-        raise ValueError('Missing glyph in PDF; see tmp/pdfs/notes.log')
+        raise ValueError('Missing glyphs: ' + repr([line for line in log.splitlines() if 'Missing character:' in line]))
     widths = [float(x) for x in re.findall(r'Overfull \\hbox \(([\d.]+)pt too wide\)', log)]
     print(f'Largest horizontal overflow: {max(widths, default=0):.2f}pt')
     direct_page_links(temp / 'notes.pdf', output)

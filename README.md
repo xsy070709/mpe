@@ -7,4 +7,4 @@
 
 ## 章节目录
 
-1. [傅里叶变换](https://xsy070709.github.io/mpe/01-fourier-transform/)（正文待发布）
+1. [傅里叶变换](https://xsy070709.github.io/mpe/01-fourier-transform/)
